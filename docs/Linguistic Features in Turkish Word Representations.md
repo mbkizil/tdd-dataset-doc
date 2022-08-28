@@ -1,0 +1,89 @@
+# Linguistic Features in Turkish Word Representations
+
+
+
+The dataset is a collection of analogical reasoning task pairs prepared by O. Gungor, and E. Yildiz. It contains 4 sets of pairs with different types of affixes, and word vectors obtained by skip-gram algorithm in their studies. [GitHub Repository](https://github.com/onurgu/linguistic-features-in-turkish-word-representations/releases) of the dataset and [the paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7960223&tag=1) can be found by given links.
+
+## Dataset Details
+
+
+
+
+The pairs contains two words with their simple versions followed by affixed states. This dataset contains 4 subsets obtained by different pairings according to their affixes.
+
+| File name | Description | Number of pairs| 
+|-------|-------------|--|
+| noun_inflection_quads.txt     | Pairs of nouns with  inflections   |15133
+| verb_inflection_quads.txt    | Pairs of verbs with inflections     |14231|
+| derivation_quads.txt    | Pairs of words with derivational affixes    |4836|
+| both_inflection_derivation.quads.txt| Pairs of words with both inflectional and derivational affixes| 303
+
+
+### Samples
+
+Sample pairs that take inflection:
+
+
+```
+konu konuları yer yerleri
+konu konuları gün günleri
+konu konuları ülke ülkeleri
+konu konuları devlet devletleri
+konu konuları iş işleri
+konu konuları hak hakları
+```
+
+
+
+
+
+## Dataset Creation
+
+### Curation Rationale
+
+The dataset is motivated by the desire to advance the word vectors representations in Turkish language to be used in many areas of NLP. 
+
+
+
+### Data Source
+
+
+The wors vectors are obtained from another dataset created by [Yildiz et al.](https://arxiv.org/abs/1702.03654) by using skip-gram algorithm. 
+The test pairs are obtained from the dataset by [D. Yuret and F. Ture](https://aclanthology.org/N06-1042/), by using several steps explained with details in the [original paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7960223&tag=1).
+
+
+### Annotations
+
+Annotation procedure contains 4 steps.
+
+1. 60.745 morpholigcal tagging obtained from the morphological disambiguity dataset by D. Yuret and F. Ture.
+2. Taggings are seperated into 3 groups by words with only inflection, only derivation, and both affixes.
+3. 25 nouns and 25 words are randomly selected from commonly used Turkish words.
+4. The analysis of these words was found and was used to obtain superficial words from the morphological analyzes produced as a result of the above steps.
+
+
+
+
+## Considerations
+
+### Social Impact of Dataset
+
+This dataset is part of an effort to advance word representations to be used in Turkish NLP studies. For agglutinative languages such as Turkish, word represantations are important to represent morphological and semantical relations between words. Despite the limited studies of this subject in Turkish language compared to English, this dataset can be used in future researches to advance word representations in Turkish language.
+
+
+
+## Additional Information
+
+### Dataset Curators
+
+
+
+Published by Onur Gungor, and Eray Yildiz.
+
+### Citation Information
+
+
+Please cite the following paper if you found this dataset useful:
+
+Onur Gungor, Eray Yildiz, "Linguistic Features in Turkish Word Representations - Türkçe Sözcük Temsillerinde Dilbilimsel Özellikler", 2017 25th Signal Processing and Communications Applications Conference (SIU), Antalya, 2017.
+
