@@ -84,7 +84,7 @@ This documentation is written based on the dataset version with commitment with 
 
 
 
-Published by Onur Gungor, and Eray Yildiz.
+Published by Onur Gungor and Eray Yildiz.
 
 ### Citation Information
 
@@ -92,7 +92,8 @@ Published by Onur Gungor, and Eray Yildiz.
 Please cite the following paper if you found this dataset useful:
 
 Onur Gungor, Eray Yildiz, "Linguistic Features in Turkish Word Representations - Türkçe Sözcük Temsillerinde Dilbilimsel Özellikler", 2017 25th Signal Processing and Communications Applications Conference (SIU), Antalya, 2017.
-'''
+
+```
 @INPROCEEDINGS{7960223,
   author={Güngör, Onur and Yıldız, Eray},
   booktitle={2017 25th Signal Processing and Communications Applications Conference (SIU)}, 
@@ -102,4 +103,4 @@ Onur Gungor, Eray Yildiz, "Linguistic Features in Turkish Word Representations -
   number={},
   pages={1-4},
   doi={10.1109/SIU.2017.7960223}}
-'''
+```
